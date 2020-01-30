@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="640.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="stylesheet" href="768.css" class="stylesheet">
+    <link rel="stylesheet" href="640.css" class="stylesheet">
+    
+    
+    
     <title>About Me | Home</title>
   </head>
 
   <body>
-        <header>
+    <div class="container-body">
+        
+            <header class="clearfix">
+            <div id="container">
             <h1>Kevin Washburn</h1>
-            <div class="wrapper"></div>
-                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="nav-item nav-link" href="index.html">About</a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </nav>
+            <div class="wrapper">
+                <ul>
+                    <li><a class="active" href="contact.html">Contact</a></li>  <!--what css styling did I use that reversed the order of my list on the rendering?-->
+                    <li class="space">|</li>
+                    <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                    <li class="space">|</li>
+                    <li><a class="active" href="index.html">About</a></li>
+                </ul>
             </div>
+        </div>
         </header>
         
     <!-- <div class="wrapper"> ??? -->
@@ -30,15 +41,17 @@
          </div>
 
         <div class="row">
-            <div class="col">
-                <img class="img-responsive" src="large.jpg">
-                <img class="img-mobile-image" src="medium.jpg">
+            <div class="col-lg-8">
+                <!-- <div class="card bg-dark text-white"> -->
+                    <img src="medium.jpg" class="img-fluid" alt="self-portrait-of-a-young-man-smiling-outdoors">
+                <!-- </div> -->
+                <!-- <img class="img-fluid" src="medium.jpg"> -->
             </div>
-        </div>
+        
 
-        <div class="row">
-            <div class="col">
-                <p>
+        <!-- <div class="row"> -->
+            <div class="col-lg-4">
+                <p class="p1">
                     I am currently a student in the coding bootcamp at UNC Charlotte. I look foward to pursuing
                     this new career path not only becuase it presents a challenge as I learn
                     this new skill, but because it allows me to be hands-on and creative. I have always been drawn
@@ -53,10 +66,11 @@
                     but also changes frequently depending on the needs of clients or an employer.
                 </p>
             </div>
+        <!-- </div> -->
+        </div>
         </div>
 
-        </div>
-
+    </div>
         <footer id="sticky-footer">
             <div>
                 <p class="footer-text">Copyright &copy; Kevin Washburn 2020</p>

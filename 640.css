@@ -1,52 +1,138 @@
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
 
-    header h1 {
-        width: 100;
-        float: none;
+    .container-body {
+        width: 100%;
+        margin: 0;
+    }
+
+    #container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+    
+    /* header {
+        margin-left: 0;
+        margin-right: 0;
+    } */
+
+    /* #header {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    } */
+    
+    h1 {
+        width: 100%;
+       
     }
 
     .wrapper {
-        float: none;
+        float: left;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        
     }
     
-    .navbar {
+    /* .navbar {
         border-bottom: 1px solid darkslategray;
-    }
+    } */
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        float: none;
+        display: inline-block;
+      }
+      
+
+   }
+      
+    .active, .space {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+      } 
+
+
     
     .container {
         margin: auto;
         max-width: 94%;
-        float: none;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
+        padding: 35px;
     }
     
     h3 {
         border-bottom: 1px solid darkslategray;
         padding-bottom: 5px;
+       
     }
-    
-    .img-responsive {
-        display: none;
+
+    .card {
+        border: none;
+        width: 100%;
+        
     }
-    
-    .img-mobile-image {
-        display: block !important;
-        max-width: 100%;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 25px;
+
+    .btn {
+        background-color: darkslategray;
+    }
+
+    .button-color {
+        color: #fff;
+    }
+
+/* .img-fluid {
+    height: auto;
+    width: 98%;
+    padding-bottom: 20px;
+    padding-top: 15px; 
+}*/
+
+
+  
+
+    .box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+        overflow: hidden;
+        padding: 40px;
+        
+    }
+    .box .text{
+        position: absolute;
+        background-color: gray;
+        z-index: 999;
+        margin: 0 auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 70%;  /*Adjust this value to move the positioned div up and down  */
+        width: 320px; /*Set the width of the positioned div */
     }
     
     p {
         padding-bottom: 10px;
         font-family: 'Source Sans Pro', sans-serif;
     }
+
+    .p1 {
+        padding-top: 15px;
+    }
     
     #sticky-footer {
         background-color: darkslategray;
         text-align: center;
         padding: 20px;
-        border-top: 5px solid lightgray;
+        border-top: 5px solid gray;
         color: #fff;
     }
     
@@ -54,8 +140,7 @@
             font-size: 12px;
     }
     
-    .wrapper {
+    /* .wrapper {
         width: 100%;
-    }
+    } */
     
-    }
