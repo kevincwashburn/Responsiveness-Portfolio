@@ -62,7 +62,14 @@ h3 {
     padding: 10px;
     border-bottom: 1px solid darkslategray;
     padding-bottom: 5px;
-    
+}
+
+.main-image {
+    height: 427px;
+}
+
+.social {
+    text-align: center;
 }
 
 /* .img-fluid {
